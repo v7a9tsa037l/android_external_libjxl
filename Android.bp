@@ -24,6 +24,9 @@ cc_library {
     sanitize: {
         all_undefined: true,
     },
+    lto: {
+        never: true,
+    },
     export_include_dirs: [
         "lib/include",
         "gen/include",
